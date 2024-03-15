@@ -53,7 +53,7 @@
         </address>
         <button type="button" class="menu-open-btn">
           <svg class="menu-open-btn-icon" width="24" height="24">
-            <use href="./icons.svg#icon-burger"></use>
+            <use href="./icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
         </button>
       </div>
@@ -334,15 +334,15 @@
                   />
                   <source
                     srcset="
-                      ./images/our-portfolio/mobile/mobile-img1.jpg    1x,
-                      ./images/our-portfolio/mobile/mobile-img1@2x.jpg 2x
+                      ./images/our-portfolio/mobile/mobile1.jpg    1x,
+                      ./images/our-portfolio/mobile/mobile1@2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
 
                   <img
                     class="portfolio-project"
-                    src="./images/our-portfolio/desktop/desktop1.jpg"
+                    src="./images/our-portfolio/mobile/mobile1.jpg"
                     alt="Banking App"
                   />
                 </picture>
@@ -377,15 +377,15 @@
                   />
                   <source
                     srcset="
-                      ./images/our-portfolio/mobile/mobile-img2.jpg    1x,
-                      ./images/our-portfolio/mobile/mobile-img2@2x.jpg 2x
+                      ./images/our-portfolio/mobile/mobile2.jpg    1x,
+                      ./images/our-portfolio/mobile/mobile2@2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
 
                   <img
                     class="portfolio-project"
-                    src="./images/our-portfolio/desktop/desktop2.jpg"
+                    src="./images/our-portfolio/mobile/mobile2.jpg"
                     alt="Cashless App"
                   />
                 </picture>
@@ -421,15 +421,15 @@
                   />
                   <source
                     srcset="
-                      ./images/our-portfolio/mobile/mobile-img3.jpg    1x,
-                      ./images/our-portfolio/mobile/mobile-img3@2x.jpg 2x
+                      ./images/our-portfolio/mobile/mobile3.jpg    1x,
+                      ./images/our-portfolio/mobile/mobile3@2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
 
                   <img
                     class="portfolio-project"
-                    src="./images/our-portfolio/desktop/desktop3.jpg"
+                    src="./images/our-portfolio/mobile/mobile3.jpg"
                     alt="Meditation App"
                   />
                 </picture>
@@ -446,31 +446,36 @@
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-list-overlay">
-                <source
-                  srcset="
-                    ./images/our-portfolio/desktop/desktop4.jpg,
-                    ./images/our-portfolio/desktop/desktop-img@2x.jpg
-                  "
-                  media="(min-width: 1158px)"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/our-portfolio/desktop/desktop4.jpg        1x,
+                      ./images/our-portfolio/desktop/desktop-img4@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
 
-                <source
-                  srcset="
-                    ./images/our-portfolio/tablet/tablet-img4.jpg    1x,
-                    ./images/our-portfolio/tablet/tablet-img4@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/our-portfolio/mobile/mobile4.jpg"
-                  media="(max-width: 767px)"
-                />
+                  <source
+                    srcset="
+                      ./images/our-portfolio/tablet/tablet-img4.jpg    1x,
+                      ./images/our-portfolio/tablet/tablet-img4@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-portfolio/mobile/mobile4.jpg    1x,
+                      ./images/our-portfolio/mobile/mobile4@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
 
-                <img
-                  class="portfolio-project"
-                  src="./images//our-portfolio/mobile/mobile4.jpg"
-                  alt="Taxi Service Marketing"
-                />
+                  <img
+                    class="portfolio-project"
+                    src="./images/our-portfolio/desktop/taxi_service.jpg"
+                    alt="Taxi Service Marketing"
+                  />
+                </picture>
 
                 <p class="portfolio-text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -503,15 +508,15 @@
                   />
                   <source
                     srcset="
-                      ./images/our-portfolio/mobile/mobile-img5.jpg    1x,
-                      ./images/our-portfolio/mobile/mobile-img5@2x.jpg 2x
+                      ./images/our-portfolio/mobile/mobile5.jpg    1x,
+                      ./images/our-portfolio/mobile/mobile5@2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
 
                   <img
                     class="portfolio-project"
-                    src="./images/our-portfolio/desktop/desktop5.jpg"
+                    src="./images/our-portfolio/mobile/mobile5.jpg"
                     alt="Screen Illustrations Design"
                   />
                 </picture>
@@ -546,15 +551,15 @@
                   />
                   <source
                     srcset="
-                      ./images/our-portfolio/mobile/mobile-img6.jpg    1x,
-                      ./images/our-portfolio/mobile/mobile-img6@2x.jpg 2x
+                      ./images/our-portfolio/mobile/mobile6.jpg    1x,
+                      ./images/our-portfolio/mobile/mobile6@2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
 
                   <img
                     class="portfolio-project"
-                    src="./images/our-portfolio/desktop/desktop6.jpg"
+                    src="./images/our-portfolio/mobile/mobile6.jpg"
                     alt="Online Courses Marketing"
                   />
                 </picture>
@@ -646,8 +651,8 @@
     </footer>
 
     <!-- Section modal window -->
-    <!--
-    <div class="backdrop is-open">
+
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -745,8 +750,9 @@
                 </svg>
               </span>
 
-              I accept the terms and conditions of the
               <span>
+                I accept the terms and conditions of the
+
                 <a class="privacy-policy-link" href="">Privacy Policy</a>
               </span>
             </label>
@@ -754,7 +760,7 @@
           <button class="review-form-submit-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <div class="mobile-menu">
       <div class="container mobile-menu-container">
@@ -763,25 +769,27 @@
             <use href="./icons.svg#icon-close_black_icon"></use>
           </svg>
         </button>
-
-        <ul class="mobile-nav-menu">
-          <li class="mobile-nav-menu-item">
-            <a href="" class="mobile-nav-link">Studio</a>
-          </li>
-          <li class="mobile-nav-menu-item">
-            <a href="" class="mobile-nav-link">Portfolio</a>
-          </li>
-          <li class="mobile-nav-menu-item">
-            <a href="" class="mobile-nav-link">Contacts</a>
-          </li>
-        </ul>
-
+        <nav class="mobile-page-nav-menu">
+          <ul class="mobile-nav-menu">
+            <li class="mobile-nav-menu-item">
+              <a class="mobile-nav-link">
+                <span class="current-mobile">Studio</span>
+              </a>
+            </li>
+            <li class="mobile-nav-menu-item">
+              <a href="" class="mobile-nav-link">Portfolio</a>
+            </li>
+            <li class="mobile-nav-menu-item">
+              <a href="" class="mobile-nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
         <address class="adress-mobile-menu">
           <ul class="adress-list-mobile-menu">
             <li>
               <a class="adress-link-mobile-menu" href="tel:110001111111"
-                >+11 (000) 111-11-11</a
-              >
+                ><span class="current-mobile">+11 (000) 111-11-11</span>
+              </a>
             </li>
             <li>
               <a
